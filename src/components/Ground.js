@@ -11,7 +11,6 @@ export const Ground = () => {
 
     const [addCube] = useStore((state) => [state.addCube])
 
-
     groundTexture.wrapS = RepeatWrapping
     groundTexture.wrapT = RepeatWrapping
     groundTexture.repeat.set(100, 100)

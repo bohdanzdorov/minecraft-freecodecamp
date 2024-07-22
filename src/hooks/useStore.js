@@ -15,7 +15,9 @@ export const useStore = create((set) => ({
             ]
         }))
     },
-    removeCube: () => {},
+    removeCube: (x, y, z) => {
+		console.log("Removed")
+	},
     setTexture: () => {},
     saveWorld: () => {},
     resetWorld: () => {},

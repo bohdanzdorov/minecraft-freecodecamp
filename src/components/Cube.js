@@ -1,5 +1,5 @@
 import {useBox} from "@react-three/cannon"
-import { useStore } from "@react-three/fiber"
+import { useStore } from "../hooks/useStore"
 import * as textures from "../images/textures"
 
 export const Cube = ({position, texture}) => {
@@ -42,7 +42,7 @@ export const Cube = ({position, texture}) => {
                 return
             }
             else if(clickedFace == 5){
-                addCube(x-1, y, z-1)
+                addCube(x, y, z-1)
                 return
             }
         }}
